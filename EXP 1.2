@@ -1,0 +1,13 @@
+import './App.css';
+import { useState } from 'react';
+function App() {
+const [counter, setCounter]=useState(0);
+return (
+<div className="App">
+<h1>Welcome to my first react app!</h1>
+<p>Counter value:{counter}</p>
+<button onClick={()=>{setCounter(counter+1)}}>Increment</button>
+</div>
+);
+}
+export default App;
